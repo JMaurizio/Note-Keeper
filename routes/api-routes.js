@@ -6,7 +6,7 @@ router.get("/notes", (req, res) => {
     res.status(200).json(notes);
 });
 
-router.post('/notes', (req,res) => {
+router.post("/notes", (req,res) => {
     const newNote = note.createNote(req.body, notes);
     res.status(200).json(newNote);
 });
